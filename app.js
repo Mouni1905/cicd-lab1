@@ -1,1 +1,1 @@
-console.log("CI pipeline");
+console.log("CI Pipeline");

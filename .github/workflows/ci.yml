@@ -19,7 +19,14 @@ jobs:
 
       - name: Run script
         run: node app.js
+
+      - name: Run tests
+        run: |
+         echo "Running test.."
+         node app.js | grep "CI Pipeline"
   
+
+      
 
       - name: Deploy step
         run: echo "Deploying to Production"

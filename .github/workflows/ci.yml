@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
       - name: Install Node
         uses: actions/setup-node@v3
         with:
@@ -24,8 +25,6 @@ jobs:
         run: |
           echo "Running test.."
           node app.js | grep "CI Pipeline"
-
-
 
       - name: Deploy step
         run: echo "Deploying to Production"
